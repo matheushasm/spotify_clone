@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Helvetica, Arial;
+}
+.container {
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+}
+
+
+header {
+    position: relative;
+    left: 0;
+    right: 0;
+    background-color: #000;
+}
+header .container {
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+}
+header .container .logo {
+    width: 120px;
+    margin-left: 20px;
+}
+header .logo img {
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+}
+header nav li {
+    margin: 0px 20px;
+}
+header nav a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    transition: all ease .2s;
+}
+header nav a:hover {
+    color: #1bd760;
+}
+
+header .container .mobileMenuIcon {
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    display: none;
+}
+header .mobileMenuIcon .hamIcom {
+    width: 100%;
+    height: 3px;
+    border: 0;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+
+.top {
+    padding-top: 50px;
+    background-color: #983398;
+    color: #fff;
+}
+.top .rightSide {
+    width: 500px;
+    height: 500px;
+    padding: 50px;
+} 
+.top .rightSide img {
+    width: 100%;
+}
+
+
+.top .leftSide,
+.bottom .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 40px
+}
+.container h4 {
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: #eee;
+}
+.container h2 {
+    margin-bottom: 40px;
+    font-size: 56px;
+    font-weight: bold;
+}
+.container p {
+    margin-bottom: 40px;
+    font-size: 26px;
+}
+.container button {
+    margin-bottom: 40px;
+    padding: 15px;
+    width: 230px;
+    font-size: 13px;
+    color: #fff;
+    background-color: #000;
+    border: 0;
+    border-radius: 20px;
+    transition: all ease .4s;
+}
+.container button:hover{
+    transform: scale(1.05, 1.05);
+    cursor: pointer;
+}
+
+
+.leftSide p small {
+    margin-bottom: 40px;
+    font-size: 14px;
+}
+.leftSide p small a {
+    color: #fff;
+}
+
+
+.bottom {
+    padding-top: 40px;
+    padding-bottom: 130px;
+    background-color: #2940ab;
+    background-image: url('./images/bg.png');
+    background-size: auto;
+}
+.bottom .content {
+    max-width: 650px;
+}
+.bottom .content h4,
+.bottom .content h2,
+.bottom .content p {
+    color: #1bd760;
+}
+.bottom .content button {
+    background-color: #1bd760;
+    color: #2940ab;
+}
+
+
+@media (max-width: 1300px) {
+    .container {
+        max-width: 1000px;
+    }
+    .top .container,
+    .bottom .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .top {
+        padding-top: 30px;
+    }
+    .top .rightSide {
+        width: 350px;
+        height: 350px;
+    }
+    .bottom .content {
+        width: 100%;
+        align-items: center;
+    }
+
+    .container h4 {
+        margin-bottom: 20px;
+        font-size: 13px;
+    }
+    .container h2 {
+        margin-bottom: 20px;
+        font-size: 52px;
+    }
+    .container p {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .container p small {
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 800px) {
+    .top {
+        padding-top: 20px;
+    }
+    .container h4 {
+        font-size: 12px;
+    }
+    .container h2 {
+        font-size: 46px;
+    }
+    .container p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+    header .container .mobileMenuIcon {
+        display: flex;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .top {
+        padding-top: 10px;
+    }
+    .container h2 {
+        font-size: 40px;
+    }
+    .container p {
+        font-size: 14px;
+    }
+    .container p small {
+        font-size: 11px;
+    }
+    .container button {
+        margin-bottom: 20px;
+        width: 230px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .top {
+        padding-top: 0px;
+    }
+    .top .rightSide {
+        width: 300px;
+        height: 300px;
+    }
+    .container h4 {
+        font-size: 11px;
+    }
+    .container h2 {
+        font-size: 34px;
+    }
+    .container p {
+        font-size: 12px;
+    }
+    .container p small {
+        font-size: 10px;
+    }
+    .container button {
+        width: 200px;
+    }
+}
+
+@media (max-width: 300px) {
+    .top .rightSide {
+        width: 250px;
+        height: 250px;
+    }
+    .container h2 {
+        font-size: 28px;
+    }
+    .container button {
+        font-size: 12px;
+    }
+}
